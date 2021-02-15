@@ -1,4 +1,20 @@
 <?php
+require('database.php');
+
+$record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
+$query = 'SELECT *
+          FROM records
+          WHERE recordID = :record_id';
+$statement = $db->prepare($query);
+$statement->bindValue(':record_id', $record_id);
+$statement->execute();
+$records = $statement->fetch(PDO::FETCH_ASSOC);
+$statement->closeCursor();
+
+$tenPer = "€" . number_format(($records['price']*.10), 2);
+$fifteenPer = "€" . number_format(($records['price']*.15), 2);
+$twentyPer = "€" . number_format(($records['price']*.20), 2);
+
 include('includes/header.php');
 ?>
 
@@ -8,7 +24,7 @@ include('includes/header.php');
 
     <label>Total Price</label>
     <br>
-    <input type="input" name="totalBefore"></input>
+    <input type="input" name="totalBefore" value="<?php echo $records['price']; ?>"></input>
     <br>
     <br>
     <label>Time Plan</label><br>
@@ -20,13 +36,13 @@ include('includes/header.php');
     <label for="3 year">3 year</label>
     <br>
     <br>
-    <label>Upfront Cost</label>
+    <label width="200px">First Payment</label>
     <br>
-    <input type="radio" id="10%" name="upfront" value="100">
+    <input type="radio" id="10%" name="upfront" value="100"><?php echo $tenPer?>
     <label for="10%">10%</label><br>
-    <input type="radio" id="15%" name="upfront" value="150">
+    <input type="radio" id="15%" name="upfront" value="150"><?php echo $fifteenPer?>
     <label for="15%">15%</label><br>
-    <input type="radio" id="20%" name="upfront" value="200">
+    <input type="radio" id="20%" name="upfront" value="200"><?php echo $twentyPer?>
     <label for="20%">20%</label>
     <br>
     <input type="submit" value="Submit">

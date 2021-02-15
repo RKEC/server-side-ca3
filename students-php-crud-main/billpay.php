@@ -1,4 +1,17 @@
+
 <?php
+require('database.php');
+
+$record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
+$query = 'SELECT *
+          FROM records
+          WHERE recordID = :record_id';
+$statement = $db->prepare($query);
+$statement->bindValue(':record_id', $record_id);
+$statement->execute();
+$records = $statement->fetch(PDO::FETCH_ASSOC);
+$statement->closeCursor();
+
 include('includes/header.php');
 
 

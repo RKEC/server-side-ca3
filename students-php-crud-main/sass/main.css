@@ -1,58 +1,96 @@
-/*Below is the header styles */
+/*Below is the sidebar styles */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+aside {
+  float: left;
+  width: 150px;
+}
+
+/*Below is the fonts styles */
+h1 {
+  font-size: 150%;
+  margin: 0;
+  padding: .5em 0 .25em;
+  color: #333;
+}
+
+h2 {
+  font-size: 120%;
+  margin: 0;
+  padding: .25em 0 .5em;
+  color: #333;
+}
+
+/*Below is the footer styles */
+footer {
+  clear: both;
+  margin-top: 1em;
+  border-top: 2px solid black;
+  background-color: #eee;
+}
+
+footer p {
+  text-align: right;
+  font-size: 80%;
+  margin: 1em 0;
+}
+
+/*Below is the header styles */
 header {
   margin: 0;
   border-bottom: 2px solid black;
 }
 
 header h1 {
-  margin: 0;
+  top: 15px;
+  position: relative;
+  left: 100px;
+  margin-bottom: 30px;
   padding: .5em 0;
   color: black;
 }
 
-header img {
+header #header_img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
+  top: 5px;
+  left: 45px;
+  width: 70px;
+  height: 80px;
 }
 
-header a {
-  position: absolute;
-  right: 0px;
-}
-
-nav ul {
+header nav ul {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-nav ul li {
+header nav ul li {
   padding-bottom: 0.5em;
 }
 
 /* Below is the body styles */
 body {
   background-color: #98C2FF;
+  margin-bottom: 5%;
 }
 
 html {
-  background-color: #ccc;
+  background-image: url("../image_uploads/wallpaper.jpg");
+  margin-bottom: 5%;
 }
 
 body {
+  border-radius: 20px;
   position: absolute;
   font-family: 'Inconsolata', monospace;
   width: 1000px;
-  top: 0%;
-  left: 22.25%;
+  top: 1%;
+  left: 25.5%;
   margin: 0 auto;
-  background-color: white;
+  background-color: #eee;
   border: 1px solid black;
   padding: .5em 2em;
+  margin-bottom: 5%;
+  min-height: 900.38px;
 }
 
 main {
@@ -76,12 +114,13 @@ li {
 }
 
 a {
-  color: #29407c;
+  color: #6884cc;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #d08504;
+  color: #59dd1c;
 }
 
 table {
@@ -133,40 +172,5 @@ br {
 
 #add_record_form input[text] {
   width: 15em;
-}
-
-/*Below is the sidebar styles */
-aside {
-  float: left;
-  width: 150px;
-}
-
-/*Below is the fonts styles */
-h1 {
-  font-size: 150%;
-  margin: 0;
-  padding: .5em 0 .25em;
-  color: #333;
-}
-
-h2 {
-  font-size: 120%;
-  margin: 0;
-  padding: .25em 0 .5em;
-  color: #333;
-}
-
-/*Below is the footer styles */
-footer {
-  clear: both;
-  margin-top: 1em;
-  border-top: 2px solid black;
-  background-color: white;
-}
-
-footer p {
-  text-align: right;
-  font-size: 80%;
-  margin: 1em 0;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,26 +2,34 @@
 
 body {
     background-color: $lightblue;
+    margin-bottom: 5%;
 }
 
 html {
-    background-color: #ccc;
+    background-image: url("../image_uploads/wallpaper.jpg");
+    margin-bottom: 5%;
+
 }
 body {
+    border-radius: 20px;
     position: absolute;
     font-family: 'Inconsolata', monospace;
     width: 1000px;
-    top: 0%;
-    left: 22.25%;
+    top: 1%;
+    left: 25.5%;
     margin: 0 auto;
-    background-color: white;
+    background-color: #eee;
     border: 1px solid black;
     padding: .5em 2em;
+    margin-bottom: 5%;
+    min-height: 900.38px;;
 }
 
 main {
     margin: 0;
+    
 }
+
 
 section {
     float: left;
@@ -38,13 +46,15 @@ li {
     padding: 0;
 }
 a {
-    color: rgb(41, 64, 124);
+    color: rgb(104, 132, 204);
     font-weight: bold;
+    text-decoration: none;
 }
 a:hover {
-    color: rgb(208, 133, 4);
+    color: rgb(89, 221, 28);
 }
 table {
+
     border: 1px solid black;
     border-collapse: collapse;
 }
