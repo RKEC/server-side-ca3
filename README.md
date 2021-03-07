@@ -10,6 +10,7 @@ This will give you a price for which you have to pay a month for the specified a
 - <a href="https://www.apachefriends.org/download.html" target="_blank">xampp apache server</a>
 
 ## How to  set it up
+- Run Apache and MySQL servers with xampp
 - Create a mysql database
 - Import the given sql file
 - Run index.php
