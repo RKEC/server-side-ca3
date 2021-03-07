@@ -10,6 +10,7 @@ This will give you a price for which you have to pay a month for the specified a
 - <a href="https://www.apachefriends.org/download.html" target="_blank">xampp apache server</a>
 
 ## How to  set it up
+- Unzip folder into htdocs in xampp file location
 - Run Apache and MySQL servers with xampp
 - Create a mysql database
 - Import the given sql file
@@ -20,3 +21,7 @@ This will give you a price for which you have to pay a month for the specified a
 d00230925@student.dkit.ie
 #### Live website
 <a href="https://mysql04.comp.dkit.ie/D00230925/ca2-server-side/students-php-crud-main/index.php" target="_blank">Phone Shop</a>
+#### Languages used
+- [PHP](https://www.php.net/)
+- [MySQL](https://www.mysql.com/)
+- [SCSS](https://sass-lang.com/)
