@@ -20,7 +20,7 @@ This will give you a price for which you have to pay a month for the specified a
 #### Email
 d00230925@student.dkit.ie
 #### Live website
-<a href="https://mysql04.comp.dkit.ie/D00230925/ca2-server-side/students-php-crud-main/index.php" target="_blank">Phone Shop</a>
+<a href="https://mysql04.comp.dkit.ie/D00230925/PhoneShop/index.php" target="_blank">Phone Shop</a>
 #### Languages used
 - [PHP](https://www.php.net/)
 - [MySQL](https://www.mysql.com/)
