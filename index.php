@@ -75,9 +75,9 @@ $statement3->closeCursor();
                 <th>Name</th>
                 <th>Price</th>
                 <th>Date Added</th>
-                <th>Delete</th>
+                <th>Buy</th>
                 <th>Edit</th>
-                <th> Buy</th>
+                <th>Delete</th>
                 
             </tr>
             <?php foreach ($phones as $phone) : ?>
@@ -87,24 +87,24 @@ $statement3->closeCursor();
                     <td class="right"><?php echo "€" . $phone['price']; ?></td>
                     <td class="right"><?php echo $phone['dateAdded']; ?></td>
                     <td>
-                        <form action="delete_phone.php" method="post" id="delete_phone_form">
+                        <form action="billpay_form.php" method="post" id="delete_phone_form">
                             <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
                             <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
-                            <input type="submit" value="Delete">
+                            <input id="buy_button" type="submit" value="Buy">
                         </form>
                     </td>
                     <td>
                         <form action="edit_phone_form.php" method="post" id="delete_phone_form">
                             <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
                             <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
-                            <input type="submit" value="Edit">
+                            <input id="edit_button" type="submit" value="Edit">
                         </form>
                     </td>
                     <td>
-                        <form action="billpay_form.php" method="post" id="delete_phone_form">
+                        <form action="delete_phone.php" method="post" id="delete_phone_form">
                             <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
                             <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
-                            <input type="submit" value="Buy">
+                            <input id="delete_button" type="submit" value="Delete">
                         </form>
                     </td>
                 </tr>
