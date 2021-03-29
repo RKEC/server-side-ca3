@@ -1,14 +1,14 @@
 /*Below is the header styles */
 header {
     margin: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $black;
     h1{
         top: 15px;
         position: relative;
         left: 100px;
         margin-bottom: 30px;
         padding: .5em 0;
-        color: black; 
+        color: $black; 
     }
     #header_img{
         position: absolute;

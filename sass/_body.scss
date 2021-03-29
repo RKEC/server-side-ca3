@@ -1,68 +1,82 @@
 /* Below is the body styles */
 
-body {
-    background-color: $lightblue;
-    margin-bottom: 5%;
+
+@mixin button-form{
+    position: relative;
+    text-decoration: underline;
+    width: 55px;
+    height: 27.5px;
+    border-radius: 15px;
+    border: white;
 }
 
 html {
     background-image: url("../image_uploads/wallpaper.jpg");
+    background-position:top;
     margin-bottom: 5%;
-
+    background-size: 110%;
 }
 body {
+    background-color: $lightblue;
+    margin-bottom: 5%;
+
     border-radius: 20px;
     position: absolute;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     width: 1000px;
-    top: 1%;
-    left: 25.5%;
+    top: 0.5%;
+    left: 22%;
     margin: 0 auto;
-    background-color: #eee;
-    border: 1px solid black;
-    padding: .5em 2em;
+    background-color: $background-colour;
+    border: 1px solid $black;
+    padding: 0.5em 2em;
     margin-bottom: 5%;
-    min-height: 900.38px;;
-}
+    min-height: 905px;
 
-main {
-    margin: 0;
-    
-}
+    main {
+        margin: 0;
+    }
 
+    section {
+        float: left;
+        width: 800px;
+        padding-bottom: 1.5em;
+    }
 
-section {
-    float: left;
-    width: 800PX;
-    padding-bottom: 1.5em;
-}
-
-ul {
-    margin: 0 0 1em 0;
-    padding: 0 0 0 2.5em;
-}
-li {
-    margin: 0;
-    padding: 0;
-}
-a {
-    color: rgb(104, 132, 204);
-    font-weight: bold;
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(89, 221, 28);
+    ul {
+        margin: 0 0 1em 0;
+        padding: 0 0 0 2.5em;
+        text-decoration: none;
+    }
+    li {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    a {
+        color: $blue;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $lightgreen;
+    }
 }
 table {
-
-    border: 1px solid black;
+    border: 1px solid $black;
     border-collapse: collapse;
-}
-td, th {
-    border: 1px dashed black;
-    padding: .2em .5em .2em .5em;
-    vertical-align: top;
-    text-align: left;
+
+    td,
+    th {
+        border: 1px dashed $black;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        vertical-align: top;
+        text-align: center;
+    }
+    td:nth-child(2) {
+        font-size: 17px;
+        color: $red;
+    }
 }
 
 form {
@@ -75,24 +89,42 @@ br {
     text-align: right;
 }
 .last_paragraph {
-	margin-bottom: 2em;	
+    margin-bottom: 2em;
 }
 .margin_top_increase {
-	margin-top: 1em;	
+    margin-top: 1em;
 }
 
 #add_record_form {
-    margin: .5em 0 1em;
-}
-#add_record_form label {
+    margin: 0.5em 0 1em;
+label {
     width: 6em;
     padding-right: 1em;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     float: left;
 }
-#add_record_form input {
-    float: left;
-}
-#add_record_form input[text] {
+input[text] {
     width: 15em;
+}
+}
+#buy_button{
+    @include button-form;
+    background-color: $buy_button;
+}
+#buy_button:hover{
+    background-color: $buy_button_hover;
+}
+#edit_button{
+    @include button-form;
+    background-color: $edit_button;
+}
+#edit_button:hover{
+    background-color: $edit_button_hover
+}
+#delete_button{
+    @include button-form;
+    background-color: $delete_button;
+}
+#delete_button:hover{
+    background-color: $delete_button_hover;
 }
