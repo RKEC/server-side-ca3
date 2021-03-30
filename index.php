@@ -1,8 +1,8 @@
 <head>
 <link rel="icon" href="image_uploads/favicon.png" type="png" sizes="16x16">
 </head>
-
 <?php
+
 require_once('database.php');
 
 // Get os ID
@@ -76,9 +76,6 @@ $statement3->closeCursor();
                 <th>Price</th>
                 <th>Date Added</th>
                 <th>Buy</th>
-                <th>Edit</th>
-                <th>Delete</th>
-                
             </tr>
             <?php foreach ($phones as $phone) : ?>
                 <tr>
@@ -93,25 +90,10 @@ $statement3->closeCursor();
                             <input id="buy_button" type="submit" value="Buy">
                         </form>
                     </td>
-                    <td>
-                        <form action="edit_phone_form.php" method="post" id="delete_phone_form">
-                            <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
-                            <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
-                            <input id="edit_button" type="submit" value="Edit">
                         </form>
-                    </td>
-                    <td>
-                        <form action="delete_phone.php" method="post" id="delete_phone_form">
-                            <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
-                            <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
-                            <input id="delete_button" type="submit" value="Delete">
-                        </form>
-                    </td>
                 </tr>
             <?php endforeach; ?>
         </table>
-        <p><a href="add_phone_form.php">Add Phone</a></p>
-        <p><a href="os_list.php">Manage Operating Systems</a></p>
     </section>
     <?php
     include('includes/footer.php');

@@ -46,7 +46,7 @@ include('includes/header.php');
     <input type="radio" id="20%" name="upfront" value="200"><?php echo $twentyPer?>
     <label for="20%">20%</label>
     <br>
-    <input type="submit" value="Submit">
+    <input id="buy_button" type="submit" value="Submit">
     <br>
 </form>
 

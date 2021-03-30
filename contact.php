@@ -25,7 +25,7 @@
 <label for='message'>Message:</label> <br>
 <textarea name="message" required></textarea>
 </p>
-<input type="submit" value="Submit"><br>
+<input type="submit" id="buy_button" value="Submit"><br>
 </form>
 
 
