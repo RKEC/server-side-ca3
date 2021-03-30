@@ -4,7 +4,7 @@
 @mixin button-form{
     position: relative;
     text-decoration: underline;
-    width: 65px;
+    width: 50%;
     height: 27.5px;
     border-radius: 15px;
     border: $border;
@@ -19,13 +19,13 @@ body {
     position: relative;
     background-color: $lightblue;
     border-radius: 20px;
-    width: 1400px;
-    left: 12.5%;
+    width: 80%;
+    left: 10%;
     background-color: $background-colour;
     border: 1px solid $black;
     padding: 0.5em 2em;
-    margin: 10px;
-    min-height: 905px;
+    margin: 1% 0%;
+    min-height: 80%;
     overflow-x: hidden;
 
     section {
@@ -67,19 +67,19 @@ table {
     th {
         border: 1px dashed $black;
         padding: 0.2em 0.5em 0.2em 0.5em;
-        font-size: 22;
+        font-size: 115%;
         text-align: center;
         
     }
     td{
-        font-size: 20px;
+        font-size: 120%;
     }
     td:first-child {
         background-color: $border;
     }
     td:nth-child(2) {
         text-decoration: underline;
-        font-size: 25px;
+        font-size: 130%;
         color: $red;
     }
 }
@@ -105,7 +105,7 @@ label {
     padding-bottom: 0.5em;
     float: left;
 }
-input[text] {
+input {
     width: 15em;
 }
 }
@@ -133,7 +133,7 @@ input[text] {
 }
 
 .topnav{
-    font-size: 18px;
+    font-size: 100%;
     top: 55px;
     position: absolute;
     right: 70px;
@@ -144,7 +144,7 @@ input[text] {
 
 #name{
     position: absolute;
-    top: -5px;
-    right: 40px;
-    color: $lightgreen;
+    top: 0%;
+    right: 2.5%;
+    color: $orange;
 }

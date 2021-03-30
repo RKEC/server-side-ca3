@@ -46,7 +46,7 @@ footer h4 {
 footer h4 a img {
   position: relative;
   top: 7px;
-  padding-right: 10px;
+  padding-right: .5%;
 }
 
 footer #contact {
@@ -55,9 +55,9 @@ footer #contact {
 }
 
 footer #contact img {
-  padding-right: 10px;
+  padding-right: .5%;
   position: relative;
-  bottom: -7px;
+  bottom: 0%;
 }
 
 /*Below is the header styles */
@@ -65,23 +65,26 @@ header {
   margin: 0;
   width: 100%;
   border-bottom: 2px solid #111;
+  margin-right: 0px;
 }
 
 header h1 {
   top: 15px;
   position: relative;
   left: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
   padding: .5em 0;
   color: #111;
+  max-width: 300px;
+  margin-right: 0px;
 }
 
 header #header_img {
   position: absolute;
-  top: 5px;
-  left: 45px;
-  width: 70px;
-  height: 80px;
+  top: -0.5%;
+  left: 2%;
+  width: 100px;
+  height: 100px;
 }
 
 header nav ul {
@@ -92,6 +95,10 @@ header nav ul {
 
 header nav ul li {
   padding-bottom: 0.5em;
+}
+
+header a {
+  max-width: 300px;
 }
 
 /* Below is the body styles */
@@ -105,13 +112,13 @@ body {
   position: relative;
   background-color: #98C2FF;
   border-radius: 20px;
-  width: 1400px;
-  left: 12.5%;
+  width: 80%;
+  left: 10%;
   background-color: #eee;
   border: 1px solid #111;
   padding: 0.5em 2em;
-  margin: 10px;
-  min-height: 905px;
+  margin: 1% 0%;
+  min-height: 80%;
   overflow-x: hidden;
 }
 
@@ -158,12 +165,12 @@ table td,
 table th {
   border: 1px dashed #111;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  font-size: 22;
+  font-size: 115%;
   text-align: center;
 }
 
 table td {
-  font-size: 20px;
+  font-size: 120%;
 }
 
 table td:first-child {
@@ -172,7 +179,7 @@ table td:first-child {
 
 table td:nth-child(2) {
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 130%;
   color: red;
 }
 
@@ -203,14 +210,14 @@ br {
   float: left;
 }
 
-#add_record_form input[text] {
+#add_record_form input {
   width: 15em;
 }
 
 #buy_button {
   position: relative;
   text-decoration: underline;
-  width: 65px;
+  width: 50%;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -224,7 +231,7 @@ br {
 #edit_button {
   position: relative;
   text-decoration: underline;
-  width: 65px;
+  width: 50%;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -238,7 +245,7 @@ br {
 #delete_button {
   position: relative;
   text-decoration: underline;
-  width: 65px;
+  width: 50%;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -250,7 +257,7 @@ br {
 }
 
 .topnav {
-  font-size: 18px;
+  font-size: 100%;
   top: 55px;
   position: absolute;
   right: 70px;
@@ -262,8 +269,8 @@ br {
 
 #name {
   position: absolute;
-  top: -5px;
-  right: 40px;
-  color: #217c21;
+  top: 0%;
+  right: 2.5%;
+  color: #f77023;
 }
 /*# sourceMappingURL=main.css.map */
