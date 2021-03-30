@@ -57,10 +57,15 @@ if(isset($_POST['login'])){
             
             //Provide the user with a login session.
             $_SESSION['user_id'] = $user['id'];
+            $_SESSION['name'] = $user['username'];
             $_SESSION['logged_in'] = time();
             
+            echo '<pre>';
+var_dump($_SESSION);
+echo '</pre>';
+            
             //Redirect to our protected page, which we called home.php
-            header('Location: index.php');
+            header('Location: manage_products.php');
             exit;
             
         } else{
@@ -78,7 +83,7 @@ if(isset($_POST['login'])){
     include('includes/header.php');
     ?>
         <h1>Login</h1>
-        <form action="login.php" method="post">
+        <form id="add_record_form" action="login.php" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Password</label>

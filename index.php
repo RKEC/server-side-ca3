@@ -6,6 +6,8 @@
 
 require_once('database.php');
 
+
+
 // Get os ID
 if (!isset($os_id)) {
     $os_id = filter_input(
@@ -46,10 +48,11 @@ $statement3->execute();
 $phones = $statement3->fetchAll();
 $statement3->closeCursor();
 ?>
-<div class="container">
     <?php
     include('includes/header.php');
+    
     ?>
+<div class="container">
     <aside>
         <!-- display a list of os -->
         <BR>

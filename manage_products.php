@@ -3,7 +3,6 @@
 </head>
 
 <?php
-
 /**
  * Start the session.
  */
@@ -19,11 +18,17 @@ if(!isset($_SESSION['user_id']) || !isset($_SESSION['logged_in'])){
     
     exit;
 }
+
+
+
 ?>
-<h4 id="name"><?php echo "Welcome, you have logged in successfully "?></h4>
+
+<h4 id="name"><?php echo "Welcome " . $_SESSION['name'] . ", you have logged in successfully "?></h4>
 
 <?php
 require_once('database.php');
+
+
 
 // Get os ID
 if (!isset($os_id)) {
@@ -38,6 +43,7 @@ if (!isset($os_id)) {
 }
 
 // Get name for current os
+
 $queryos = "SELECT * FROM os
 WHERE osID = :os_id";
 $statement1 = $db->prepare($queryos);
@@ -64,7 +70,9 @@ $statement3->bindValue(':os_id', $os_id);
 $statement3->execute();
 $phones = $statement3->fetchAll();
 $statement3->closeCursor();
+
 ?>
+
 <div class="container">
     <?php
     include('includes/header.php');
