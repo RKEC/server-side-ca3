@@ -1,6 +1,8 @@
 /*Below is the fonts styles */
 
-h1 {
+body{
+    font-family: "Inconsolata", monospace;
+    h1 {
     font-size: 150%;
     margin: 0;
     padding: .5em 0 .25em;
@@ -12,3 +14,5 @@ h2 {
     padding: .25em 0 .5em;
     color: #333;
 }
+}
+

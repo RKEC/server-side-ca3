@@ -10,8 +10,8 @@
 <!-- the body section -->
 <body>
 <header>
-<a class="active" href="index.php"><img src="image_uploads/favicon.png" id="header_img"></a>
-<h1>Phone Shop</h1>
+<a class="active" href="index.php"><img src="image_uploads/favicon.png" id="header_img"><h1>Phone Shop</h1></a>
+
 <div class="topnav">
   <a href="manage_products.php">Admin</a>
   <a href="register.php">Register</a>

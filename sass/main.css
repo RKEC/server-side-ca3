@@ -2,18 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 aside {
   float: left;
-  width: 175px;
+  width: 15%;
 }
 
 /*Below is the fonts styles */
-h1 {
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+body h1 {
   font-size: 150%;
   margin: 0;
   padding: .5em 0 .25em;
   color: #333;
 }
 
-h2 {
+body h2 {
   font-size: 120%;
   margin: 0;
   padding: .25em 0 .5em;
@@ -35,6 +39,7 @@ footer p {
 }
 
 footer h4 {
+  margin: 1px;
   position: relative;
 }
 
@@ -46,7 +51,7 @@ footer h4 a img {
 
 footer #contact {
   position: relative;
-  right: -885px;
+  text-align: right;
 }
 
 footer #contact img {
@@ -58,6 +63,7 @@ footer #contact img {
 /*Below is the header styles */
 header {
   margin: 0;
+  width: 100%;
   border-bottom: 2px solid #111;
 }
 
@@ -92,36 +98,31 @@ header nav ul li {
 html {
   background-image: url("../image_uploads/wallpaper.jpg");
   background-position: top;
-  margin-bottom: 5%;
   background-size: 110%;
 }
 
 body {
+  position: relative;
   background-color: #98C2FF;
-  margin-bottom: 5%;
   border-radius: 20px;
-  position: absolute;
-  font-family: "Inconsolata", monospace;
-  width: 1000px;
-  top: 0.5%;
-  left: 22%;
-  margin: 0 auto;
+  width: 1400px;
+  left: 12.5%;
   background-color: #eee;
   border: 1px solid #111;
   padding: 0.5em 2em;
-  margin-bottom: 5%;
+  margin: 10px;
   min-height: 905px;
   overflow-x: hidden;
 }
 
-body main {
-  margin: 0;
+body section {
+  width: 100%;
+  padding-bottom: 1.5em;
 }
 
-body section {
-  float: left;
-  width: 800px;
-  padding-bottom: 1.5em;
+body section .container {
+  position: absolute;
+  width: 100%;
 }
 
 body ul {
@@ -147,20 +148,31 @@ body a:hover {
 }
 
 table {
+  position: relative;
   border: 1px solid #111;
   border-collapse: collapse;
+  width: 80%;
 }
 
 table td,
 table th {
   border: 1px dashed #111;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  vertical-align: top;
+  font-size: 22;
   text-align: center;
 }
 
+table td {
+  font-size: 20px;
+}
+
+table td:first-child {
+  background-color: white;
+}
+
 table td:nth-child(2) {
-  font-size: 17px;
+  text-decoration: underline;
+  font-size: 25px;
   color: red;
 }
 
@@ -170,10 +182,6 @@ form {
 
 br {
   clear: left;
-}
-
-.right {
-  text-align: right;
 }
 
 .last_paragraph {

@@ -95,9 +95,8 @@ $statement3->closeCursor();
                 <th>Name</th>
                 <th>Price</th>
                 <th>Date Added</th>
-                <th>Edit</th>
-                <th>Delete</th>
-                
+                <th>Actions</th>
+           
             </tr>
             <?php foreach ($phones as $phone) : ?>
                 <tr>
@@ -106,13 +105,16 @@ $statement3->closeCursor();
                     <td class="right"><?php echo "€" . $phone['price']; ?></td>
                     <td class="right"><?php echo $phone['dateAdded']; ?></td>
                     <td>
+                    <form action="billpay_form.php" method="post" id="delete_phone_form">
+                            <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
+                            <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
+                            <input id="buy_button" type="submit" value="Buy">
+                        </form>
                         <form action="edit_phone_form.php" method="post" id="delete_phone_form">
                             <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
                             <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">
                             <input id="edit_button" type="submit" value="Edit">
                         </form>
-                    </td>
-                    <td>
                         <form action="delete_phone.php" method="post" id="delete_phone_form">
                             <input type="hidden" name="phone_id" value="<?php echo $phone['phoneID']; ?>">
                             <input type="hidden" name="os_id" value="<?php echo $phone['osID']; ?>">

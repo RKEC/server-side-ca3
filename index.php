@@ -1,3 +1,4 @@
+<!DOCTYPE>
 <head>
 <link rel="icon" href="image_uploads/favicon.png" type="png" sizes="16x16">
 </head>
@@ -75,7 +76,7 @@ $statement3->closeCursor();
                 <th>Name</th>
                 <th>Price</th>
                 <th>Date Added</th>
-                <th>Buy</th>
+                <th>Actions</th>
             </tr>
             <?php foreach ($phones as $phone) : ?>
                 <tr>
