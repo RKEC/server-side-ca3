@@ -34,6 +34,27 @@ footer p {
   margin: 1em 0;
 }
 
+footer h4 {
+  position: relative;
+}
+
+footer h4 a img {
+  position: relative;
+  top: 7px;
+  padding-right: 10px;
+}
+
+footer #contact {
+  position: relative;
+  right: -885px;
+}
+
+footer #contact img {
+  padding-right: 10px;
+  position: relative;
+  bottom: -7px;
+}
+
 /*Below is the header styles */
 header {
   margin: 0;
@@ -90,6 +111,7 @@ body {
   padding: 0.5em 2em;
   margin-bottom: 5%;
   min-height: 905px;
+  overflow-x: hidden;
 }
 
 body main {
@@ -121,7 +143,7 @@ body a {
 }
 
 body a:hover {
-  color: light-green;
+  color: #217c21;
 }
 
 table {
@@ -180,7 +202,7 @@ br {
 #buy_button {
   position: relative;
   text-decoration: underline;
-  width: 55px;
+  width: 65px;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -194,7 +216,7 @@ br {
 #edit_button {
   position: relative;
   text-decoration: underline;
-  width: 55px;
+  width: 65px;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -208,7 +230,7 @@ br {
 #delete_button {
   position: relative;
   text-decoration: underline;
-  width: 55px;
+  width: 65px;
   height: 27.5px;
   border-radius: 15px;
   border: white;
@@ -217,5 +239,23 @@ br {
 
 #delete_button:hover {
   background-color: #bb3737;
+}
+
+.topnav {
+  font-size: 18px;
+  top: 55px;
+  position: absolute;
+  right: 70px;
+}
+
+.topnav a {
+  padding-right: 10px;
+}
+
+#name {
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  color: #217c21;
 }
 /*# sourceMappingURL=main.css.map */

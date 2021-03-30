@@ -10,6 +10,12 @@
 <!-- the body section -->
 <body>
 <header>
-<img src="image_uploads/favicon.png" id="header_img">
+<a class="active" href="index.php"><img src="image_uploads/favicon.png" id="header_img"></a>
 <h1>Phone Shop</h1>
+<div class="topnav">
+  <a href="manage_products.php">Admin</a>
+  <a href="register.php">Register</a>
+  <a href="login.php">Login</a>
+  <a href="logout.php">Logout</a>
+</div>
 </header>

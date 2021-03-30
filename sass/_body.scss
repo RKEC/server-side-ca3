@@ -4,10 +4,10 @@
 @mixin button-form{
     position: relative;
     text-decoration: underline;
-    width: 55px;
+    width: 65px;
     height: 27.5px;
     border-radius: 15px;
-    border: white;
+    border: $border;
 }
 
 html {
@@ -32,6 +32,7 @@ body {
     padding: 0.5em 2em;
     margin-bottom: 5%;
     min-height: 905px;
+    overflow-x: hidden;
 
     main {
         margin: 0;
@@ -127,4 +128,21 @@ input[text] {
 }
 #delete_button:hover{
     background-color: $delete_button_hover;
+}
+
+.topnav{
+    font-size: 18px;
+    top: 55px;
+    position: absolute;
+    right: 70px;
+    a{
+        padding-right: 10px;
+    }
+}
+
+#name{
+    position: absolute;
+    top: -5px;
+    right: 40px;
+    color: $lightgreen;
 }

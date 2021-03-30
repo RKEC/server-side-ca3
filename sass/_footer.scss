@@ -9,5 +9,22 @@ footer {
         font-size: 80%;
         margin: 1em 0;   
     }
+    h4{
+        position: relative;
+        a img{
+            position: relative;
+            top: 7px;
+            padding-right: 10px;
+        }
+    }
+    #contact{
+        position: relative;
+        right: -885px;
+        img{
+            padding-right: 10px;
+            position: relative;
+            bottom: -7px;
+        }
+    }
     
 }
