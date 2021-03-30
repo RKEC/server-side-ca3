@@ -30,6 +30,7 @@ if(isset($_POST['register'])){
     
     //Retrieve the field values from our registration form.
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
+    $dob = !empty($_POST['dob']) ? trim($_POST['dob']) : null;
     $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
     
     //TO ADD: Error checking (username characters, password length, etc).
@@ -64,11 +65,12 @@ if(isset($_POST['register'])){
     
     //Prepare our INSERT statement.
     //Remember: We are inserting a new row into our users table.
-    $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+    $sql = "INSERT INTO users (username, dob, password) VALUES (:username, :dob, :password)";
     $stmt = $pdo->prepare($sql);
     
     //Bind our variables.
     $stmt->bindValue(':username', $username);
+    $stmt->bindValue(':dob', $dob);
     $stmt->bindValue(':password', $passwordHash);
 
     //Execute the statement and insert the new account.
@@ -89,6 +91,9 @@ if(isset($_POST['register'])){
         <form action="register.php" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username"><br><br>
+        
+<label for='dob'>Date of Birth:</label> <br>
+<input id="datefield" type="date" name="dob" min="1950-01-01" required/> <br><br>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required><br><br>
             <input type="submit" id="buy_button"  name="register" value="Confirm"></button>
